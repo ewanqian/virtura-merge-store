@@ -4,6 +4,10 @@
     {"id":"OBJ-002","name":"TIMER / REWIND","type":"phygital","status":"prototype","price_display":"¥399 concept price","tagline":"FOCUS / REWIND / REPEAT"},
     {"id":"OBJ-003","name":"DROP FLOW / ∞","type":"phygital","status":"prototype","price_display":"¥499 concept price","tagline":"CONTINUOUS STATES OF MOVEMENT"},
     {"id":"OBJ-004","name":"OPERATOR PATCH SET","type":"physical","status":"sampling","price_display":"¥129 concept price","tagline":"UTILITY FOR REAL-TIME WORK"},
+    {"id":"OBJ-005","name":"SIGNAL KEY SET 01","type":"phygital","status":"prototype","price_display":"¥229 concept price","tagline":"3D PRINTED KEYS / ACOUSTIC CONTROL"},
+    {"id":"OBJ-006","name":"HOURGLASS 10","type":"physical","status":"concept","price_display":"¥299 concept price","tagline":"A QUIETER WAY TO MEASURE TIME"},
+    {"id":"OBJ-007","name":"FLOW BLOCK","type":"physical","status":"concept","price_display":"¥369 concept price","tagline":"A STUDY OF GRAVITY AND RHYTHM"},
+    {"id":"OBJ-008","name":"FLOW TAG","type":"physical","status":"concept","price_display":"¥139 concept price","tagline":"TAKE A PIECE OF FLOW"},
     {"id":"DIG-001","name":"LIQUID FIELD","type":"digital","status":"concept","price_display":"¥49 concept price","tagline":"A FIELD THAT NEVER SETTLES"},
     {"id":"DIG-002","name":"TIME RESIDUE","type":"digital","status":"concept","price_display":"¥69 concept price","tagline":"THE TRACE LEFT AFTER TIME MOVES"},
     {"id":"DIG-003","name":"GRAVITY STUDY","type":"digital","status":"concept","price_display":"¥49 concept price","tagline":"AN OBJECT DEFINED BY ORIENTATION"}
