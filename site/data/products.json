@@ -1,0 +1,11 @@
+{
+  "products": [
+    {"id":"OBJ-001","name":"SYNC OBJECT","type":"phygital","status":"prototype","price_display":"¥459 concept price","tagline":"LISTEN / LOCK / FOLLOW"},
+    {"id":"OBJ-002","name":"TIMER / REWIND","type":"phygital","status":"prototype","price_display":"¥399 concept price","tagline":"FOCUS / REWIND / REPEAT"},
+    {"id":"OBJ-003","name":"DROP FLOW / ∞","type":"phygital","status":"prototype","price_display":"¥499 concept price","tagline":"CONTINUOUS STATES OF MOVEMENT"},
+    {"id":"OBJ-004","name":"OPERATOR PATCH SET","type":"physical","status":"sampling","price_display":"¥129 concept price","tagline":"UTILITY FOR REAL-TIME WORK"},
+    {"id":"DIG-001","name":"LIQUID FIELD","type":"digital","status":"concept","price_display":"¥49 concept price","tagline":"A FIELD THAT NEVER SETTLES"},
+    {"id":"DIG-002","name":"TIME RESIDUE","type":"digital","status":"concept","price_display":"¥69 concept price","tagline":"THE TRACE LEFT AFTER TIME MOVES"},
+    {"id":"DIG-003","name":"GRAVITY STUDY","type":"digital","status":"concept","price_display":"¥49 concept price","tagline":"AN OBJECT DEFINED BY ORIENTATION"}
+  ]
+}
