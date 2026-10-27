@@ -3,99 +3,70 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#f1eee7">
-<title>VIRTURA / MERGE — 现实制品</title>
+<meta name="theme-color" content="#eeeae3">
+<title>VIRTURA / MERGE — 现实制品商店</title>
 <meta name="description" content="VIRTURA MERGE — 从演出、系统与实验中生长出来的实体、数字与虚实共生制品。">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<header class="topbar">
-  <a class="brand" href="#top">VIRTURA <span>/ MERGE</span></a>
-  <nav><a href="#objects">制品 OBJECTS</a><a href="#digital">数字 DIGITAL</a><a href="#passport">护照 PASSPORT</a><a href="https://github.com/ewanqian/virtura-merge-store">SOURCE</a></nav>
+<header class="shopbar">
+  <a class="shopbrand" href="index.html">VIRTURA <span>/ MERGE</span></a>
+  <nav class="shopnav"><a href="#store">全部 ALL</a><a href="#store">制品 OBJECTS</a><a href="#store">穿戴 APPAREL</a><a href="#store">工具 UTILITY</a><a href="#store">限定 EDITIONS</a></nav>
+  <div class="shoptools"><span>搜索 SEARCH</span><span>购物车 CART (0)</span><i></i></div>
 </header>
-<main id="top">
-<section class="hero">
-  <div class="hero-copy">
-    <p class="eyebrow">VIRTURA OBJECT STORE / COLLECTION 00 / 2026</p>
-    <h1><span class="cn-serif">现实制品</span><br><em>Goods for Reality.</em></h1>
-    <p class="lede">从演出、系统与实验中生长出来的物件。<br>Physical objects, digital objects, one registry.</p>
-    <div class="hero-actions"><a class="text-link" href="#objects">查看首批制品 →</a><a class="text-link quiet" href="timer.html">打开数字物件 OBJ-002 ↗</a></div>
-  </div>
-  <div class="hero-object" aria-label="Interactive TIMER / REWIND prototype">
-    <div class="editorial-index"><span>OBJECT 002</span><span>PHYGITAL / TIMER</span></div>
-    <div class="timer-shell" id="heroTimer">
-      <div class="timer-top"><span>OBJ-002</span><span id="timerState">FORWARD</span></div>
-      <div class="timer-display" id="timerDisplay">10:00</div>
-      <div class="timer-bottom"><span>TIMER / REWIND</span><button id="timerToggle" type="button">REVERSE</button></div>
-    </div>
-    <div class="hero-caption">时间不是界面里的数字，而是一种可以被翻转的物理状态。</div>
-  </div>
-</section>
+<main id="store" class="store-shell">
+  <section class="store-top">
+    <aside class="brand-panel">
+      <div class="rock rock-a"></div><div class="rock rock-b"></div>
+      <div class="brand-panel-copy">
+        <p>MERGE STORE</p>
+        <h1>现实制品</h1>
+        <span>从演出、系统与实验中生长出来的物件。</span>
+        <em></em>
+        <small>VIRTURA / GOODS FOR REALITY</small>
+      </div>
+    </aside>
 
-<section class="manifesto">
-  <p class="cn-serif">不是普通周边。每件制品都必须先作为一个物件成立。</p>
-  <p>OBJECT / SYSTEM / EDITION / PASSPORT</p>
-</section>
+    <a class="product-card top-card" href="product.html?id=OBJ-002">
+      <div class="product-art art-timer"><div class="timer-cube"><span>25<small>MIN</small></span><b></b><i>50<small>MIN</small></i></div></div>
+      <div class="product-copy"><div><h2>TIMER 01</h2><p>时间 / 倒流 / 重复 · FOCUS / REWIND / REPEAT</p><strong>¥ 399</strong></div><span class="arrow">→</span></div>
+    </a>
 
-<section id="objects" class="feature feature-timer">
-  <div class="feature-copy">
-    <p class="eyebrow">OBJ-002 / PHYGITAL / 原型开发中</p>
-    <h2><span class="cn-serif">时间 / 倒流</span><small>TIMER / REWIND</small></h2>
-    <p>一个可以被翻转的实体计时器。正置时向前计时，翻转后进入 REWIND。数字版本保留同一套状态逻辑，并进一步留下时间残影。</p>
-    <a class="text-link" href="timer.html">进入 3D 数字物件 →</a>
-    <div class="state-list"><span>FORWARD</span><span>HOLD</span><span>REWIND</span><span>RESIDUE</span></div>
-  </div>
-  <div class="feature-demo timer-stage">
-    <div class="residue" id="residue"></div>
-    <div class="mini-timer"><span>TIME</span><b id="miniTimer">00:42</b><small id="miniDirection">→</small></div>
-  </div>
-</section>
+    <a class="product-card top-card" href="product.html?id=OBJ-003">
+      <div class="product-art art-drop"><div class="glass-column"><span class="drop d1"></span><span class="drop d2"></span><span class="drop d3"></span><span class="drop d4"></span><span class="drop d5"></span></div></div>
+      <div class="product-copy"><div><h2>DROP FLOW 01</h2><p>持续流动状态 · CONTINUOUS STATES OF MOVEMENT</p><strong>¥ 499</strong></div><span class="arrow">→</span></div>
+    </a>
 
-<section class="feature feature-flow">
-  <div class="feature-demo flow-stage" id="flowStage" aria-label="DROP FLOW continuous flow demo">
-    <canvas id="flowCanvas"></canvas>
-    <div class="flow-label"><span>OBJ-003</span><b>DROP FLOW / ∞</b><small id="flowMode">LAMINAR</small></div>
-  </div>
-  <div class="feature-copy">
-    <p class="eyebrow">OBJ-003 / PHYGITAL / 连续状态</p>
-    <h2><span class="cn-serif">滴落 / 无限</span><small>DROP FLOW / ∞</small></h2>
-    <p>没有明显循环接缝的持续流动物件。实体版研究透明介质、光与流体；数字版则把黏度、密度与湍流变成可以被操作的状态。</p>
-    <div class="control-row"><button data-flow="LAMINAR">层流 LAMINAR</button><button data-flow="FLOW">流动 FLOW</button><button data-flow="TURBULENT">湍流 TURBULENT</button></div>
-  </div>
-</section>
+    <a class="product-card top-card" href="product.html?id=OBJ-001">
+      <div class="product-art art-sync"><div class="sync-cube"><div class="sync-top"></div><div class="sync-glow"></div><div class="sync-base"></div></div></div>
+      <div class="product-copy"><div><h2>SYNC OBJECT</h2><p>聆听 / 锁定 / 跟随 · LISTEN / LOCK / FOLLOW</p><strong>¥ 459</strong></div><span class="arrow">→</span></div>
+    </a>
+  </section>
 
-<section class="feature feature-sync">
-  <div class="feature-copy">
-    <p class="eyebrow">OBJ-001 / PROGRAMMABLE OBJECT / 声音输入</p>
-    <h2><span class="cn-serif">同步物件</span><small>SYNC OBJECT</small></h2>
-    <p>一个本地运行的小型音画物件。麦克风只在浏览器本地分析，声音被翻译为 LISTEN、LOCK、FOLLOW、HOLD 与 RELEASE，而不是传统频谱条。</p>
-    <button class="primary" id="micButton" type="button">启用麦克风 / ENABLE MIC</button>
-    <p class="microcopy" id="micStatus">未授权麦克风时，当前使用模拟输入。</p>
-  </div>
-  <div class="feature-demo sync-stage">
-    <div class="sync-object" id="syncObject"><span>OBJ-001</span><div class="light-field" id="lightField"></div><small id="syncState">LISTEN</small></div>
-  </div>
-</section>
+  <section class="store-bottom">
+    <a class="product-card" href="signal.html">
+      <div class="product-art art-keys"><div class="key-grid">
+        <span>○</span><span>│</span><span>✣</span><span>LIVE</span><span>HOLD</span><span>EXIT</span><span>×</span><span>—</span><span>⋮</span>
+      </div></div>
+      <div class="product-copy"><div><h2>SIGNAL KEY SET 01</h2><p>信号键组 · 3D PRINTED KEYS / ACOUSTIC CONTROL</p><strong>¥ 229 / 概念价</strong></div><span class="arrow">→</span></div>
+    </a>
 
-<section id="digital" class="catalog-section">
-  <div class="sectionhead"><span>COLLECTION 00 / 00—07</span><span>在售前实验 / PRE-PRODUCTION</span></div>
-  <div class="catalog-intro"><h2 class="cn-serif">首批制品</h2><p>实体、数字，以及两者之间。</p></div>
-  <div id="grid" class="grid"></div>
-</section>
+    <a class="product-card" href="product.html?id=OBJ-006">
+      <div class="product-art art-hourglass"><div class="hourglass"><b></b></div></div>
+      <div class="product-copy"><div><h2>HOURGLASS 10</h2><p>更安静地测量时间 · A QUIETER WAY TO MEASURE TIME</p><strong>¥ 299</strong></div><span class="arrow">→</span></div>
+    </a>
 
-<section id="passport" class="passport">
-  <p class="eyebrow">OBJECT PASSPORT / 制品护照</p>
-  <h2>TMR-2026-0047</h2>
-  <div class="passportgrid">
-    <span>制品 OBJECT<br><b>TIMER / REWIND</b></span>
-    <span>编号 EDITION<br><b>0047 / 0500</b></span>
-    <span>实体对应 PHYSICAL TWIN<br><b>AVAILABLE</b></span>
-    <span>链上状态 CHAIN<br><b>UNCLAIMED</b></span>
-  </div>
-  <p class="passport-note">MERGE 自有 Object Registry 是主记录。链上凭证只是可选的验证层，并从测试网开始。</p>
-</section>
+    <a class="product-card" href="product.html?id=OBJ-007">
+      <div class="product-art art-block"><div class="flow-block"><i></i><b></b></div></div>
+      <div class="product-copy"><div><h2>FLOW BLOCK</h2><p>重力与节律研究 · A STUDY OF GRAVITY AND RHYTHM</p><strong>¥ 369</strong></div><span class="arrow">→</span></div>
+    </a>
+
+    <a class="product-card" href="product.html?id=OBJ-008">
+      <div class="product-art art-tag"><div class="flow-tag"><b></b><i></i></div></div>
+      <div class="product-copy"><div><h2>FLOW TAG</h2><p>带走一小段流动 · TAKE A PIECE OF FLOW</p><strong>¥ 139</strong></div><span class="arrow">→</span></div>
+    </a>
+  </section>
 </main>
-<footer><span>MERGE / VIRTURA</span><span>现实制品 / GOODS FOR REALITY</span><span>2026</span></footer>
-<script src="app.js"></script>
+<footer class="shopfooter"><span>MERGE STORE — VIRTURA</span><span>“ GOODS FOR REALITY ”</span><span>ABOUT　 SHIPPING　 CONTACT　 ●</span></footer>
 </body>
 </html>
