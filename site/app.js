@@ -1,11 +1,17 @@
 // MERGE storefront interactions — dependency free prototype.
 
+const cnNames={
+ 'OBJ-001':'同步物件','OBJ-002':'时间 / 倒流','OBJ-003':'滴落 / 无限','OBJ-004':'操作员贴章',
+ 'DIG-001':'液态场','DIG-002':'时间残留','DIG-003':'重力研究'
+};
+
 // Catalog
 fetch('data/products.json').then(r=>r.json()).then(({products})=>{
  const g=document.getElementById('grid');
  products.forEach(p=>{
   const d=document.createElement('a'); d.className='card'; d.href=`product.html?id=${encodeURIComponent(p.id)}`;
-  d.innerHTML=`<div><div class="visual"><div class="card-code">${p.id}</div></div><p>${p.id} / ${p.type.toUpperCase()}</p><h3>${p.name}</h3><p>${p.tagline}</p></div><div class="meta"><span>${p.status.toUpperCase()}</span><span>${p.price_display} →</span></div>`;
+  const price=p.price_display.replace('concept price','概念价');
+  d.innerHTML=`<div><div class="visual"><div class="card-code">${p.id}</div></div><p>${p.id} / ${p.type.toUpperCase()}</p><h3><span class="cn-serif">${cnNames[p.id]||p.name}</span><small>${p.name}</small></h3><p>${p.tagline}</p></div><div class="meta"><span>${p.status.toUpperCase()}</span><span>${price} →</span></div>`;
   g.appendChild(d);
  });
 });
@@ -90,8 +96,9 @@ micButton.addEventListener('click',async()=>{
   analyser=audioCtx.createAnalyser();analyser.fftSize=256;
   const src=audioCtx.createMediaStreamSource(stream);src.connect(analyser);
   data=new Uint8Array(analyser.frequencyBinCount);micActive=true;
-  micButton.textContent='MICROPHONE ACTIVE';micStatus.textContent='Local microphone analysis is active. Audio is not uploaded.';
+  micButton.textContent='麦克风已启用 / MICROPHONE ACTIVE';
+  micStatus.textContent='声音只在本地浏览器中分析，不会上传。';
  }catch(e){
-  micStatus.textContent='Microphone unavailable or permission denied. Simulation remains active.';
+  micStatus.textContent='麦克风不可用或权限被拒绝，继续使用模拟输入。';
  }
 });
