@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#0d0d0c">
+<title>TIMER / REWIND — VIRTURA MERGE</title>
+<meta name="description" content="Interactive 3D prototype of VIRTURA MERGE TIMER / REWIND.">
+<link rel="stylesheet" href="timer.css">
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://cdn.jsdelivr.net/npm/three@0.186.1/build/three.module.js",
+    "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.186.1/examples/jsm/"
+  }
+}
+</script>
+</head>
+<body>
+<header class="topbar"><a href="index.html">VIRTURA / MERGE</a><span>OBJ-002 / DIGITAL OBJECT</span><a href="product.html?id=OBJ-002">DETAILS</a></header>
+<main>
+  <section class="viewer" id="viewer">
+    <div id="canvasMount" class="canvas-mount"></div>
+    <div class="hud hud-left"><span>STATE</span><b id="stateLabel">FORWARD</b></div>
+    <div class="hud hud-right"><span>TIME</span><b id="timeLabel">10:00</b></div>
+    <div class="instructions">DRAG TO ROTATE · SCROLL TO ZOOM · FLIP UPSIDE DOWN TO REWIND</div>
+  </section>
+  <section class="control-panel">
+    <div><span class="eyebrow">TIMER / REWIND</span><h1>A physical interface for reversible time.</h1></div>
+    <div class="controls">
+      <button id="forwardBtn">FORWARD</button>
+      <button id="holdBtn">HOLD</button>
+      <button id="rewindBtn">REWIND</button>
+      <button id="resetBtn">RESET</button>
+    </div>
+    <p>Prototype behavior: orientation and explicit control both affect temporal direction. The final physical edition will map the same state model to IMU input.</p>
+  </section>
+</main>
+<script type="module" src="timer.js"></script>
+</body>
+</html>
