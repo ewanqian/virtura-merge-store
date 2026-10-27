@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#0d0d0c">
+<title>信号键组 / SIGNAL KEY SET — VIRTURA MERGE</title>
+<meta name="description" content="VIRTURA MERGE SIGNAL KEY SET — acoustic control prototype with interchangeable physical keys.">
+<link rel="stylesheet" href="signal.css">
+</head>
+<body>
+<header class="topbar"><a href="index.html">VIRTURA / MERGE</a><span>OBJ-005 / SIGNAL KEY SET</span><a href="product.html?id=OBJ-005">商品详情 DETAILS</a></header>
+<main>
+<section class="signal-stage">
+  <div class="signal-copy">
+    <p>ACOUSTIC CONTROL / PROTOTYPE 00</p>
+    <h1>信号键组<br><small>SIGNAL KEY SET 01</small></h1>
+    <div class="signal-desc">不是传统遥控器。每个物理按键拥有自己的声音身份；短音被附近设备的麦克风拾取，再翻译成一个明确的控制事件。</div>
+  </div>
+  <div class="key-object" id="keyObject">
+    <button data-key="A" data-hz="523"><span>○</span><small>A / 523</small></button>
+    <button data-key="B" data-hz="659"><span>│</span><small>B / 659</small></button>
+    <button data-key="C" data-hz="784"><span>✣</span><small>C / 784</small></button>
+    <button data-key="D" data-hz="932"><span>LIVE</span><small>D / 932</small></button>
+    <button data-key="E" data-hz="1109"><span>HOLD</span><small>E / 1109</small></button>
+    <button data-key="F" data-hz="1319"><span>EXIT</span><small>F / 1319</small></button>
+    <button data-key="G" data-hz="1568"><span>×</span><small>G / 1568</small></button>
+    <button data-key="H" data-hz="1865"><span>—</span><small>H / 1865</small></button>
+    <button data-key="I" data-hz="2093"><span>⋮</span><small>I / 2093</small></button>
+  </div>
+</section>
+<section class="signal-console">
+  <div class="status-panel"><span>LAST EVENT</span><b id="lastEvent">—</b><small id="eventMeta">点击任意按键试听编码音。</small></div>
+  <div class="status-panel"><span>MIC DETECTOR</span><b id="detectorState">OFFLINE</b><small id="detectorMeta">启用后仅在本地分析麦克风，不上传音频。</small></div>
+  <button id="micButton" class="mic-button">启用麦克风 / ENABLE MIC</button>
+</section>
+<section class="protocol">
+  <div><p>01 / KEY</p><h2>3D 打印键帽</h2><span>不同轮廓、触感、符号可以对应不同状态。键帽只负责人的识别；底部电子模块保持统一。</span></div>
+  <div><p>02 / SOUND</p><h2>声音编码</h2><span>按下 → 发射 60–120ms 的短音或 chirp。未来可以从单频升级为双音序列，降低环境声误触发。</span></div>
+  <div><p>03 / LISTEN</p><h2>麦克风拾取</h2><span>SYNC OBJECT、手机、电脑或舞台系统监听声音，并在本地识别对应控制事件。</span></div>
+  <div><p>04 / POWER</p><h2>超薄低功耗</h2><span>实体研究方向：低功耗 MCU + 压电换能器 + 纽扣电池。CR2032 作为第一版体积基准，必要时提升到更高容量规格。</span></div>
+</section>
+</main>
+<footer><span>MERGE / VIRTURA</span><span>PRESS → SOUND → LISTEN → EVENT</span><span>2026</span></footer>
+<script src="signal.js"></script>
+</body>
+</html>
