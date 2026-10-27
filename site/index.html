@@ -3,20 +3,95 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>VIRTURA / MERGE</title>
+<meta name="theme-color" content="#e8e4dd">
+<title>VIRTURA / MERGE — Goods for Reality</title>
+<meta name="description" content="VIRTURA MERGE — physical, digital and phygital objects derived from performances, systems and experiments.">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<header><div class="brand">VIRTURA <span>/ MERGE</span></div><nav>OBJECTS &nbsp;&nbsp; DIGITAL &nbsp;&nbsp; PHYGITAL &nbsp;&nbsp; UTILITY</nav></header>
-<main>
+<header class="topbar">
+  <a class="brand" href="#top">VIRTURA <span>/ MERGE</span></a>
+  <nav><a href="#objects">OBJECTS</a><a href="#digital">DIGITAL</a><a href="#passport">PASSPORT</a><a href="https://github.com/ewanqian/virtura-merge-store">SOURCE</a></nav>
+</header>
+<main id="top">
 <section class="hero">
-<div><p class="eyebrow">VIRTURA OBJECT STORE / PROTOTYPE</p><h1>GOODS<br>FOR REALITY.</h1><p class="lede">Objects derived from performances, systems and experiments.</p></div>
-<div class="hero-object"><div class="core"><span>OBJ-002</span><b>TIMER</b><small>REWIND</small></div></div>
+  <div class="hero-copy">
+    <p class="eyebrow">VIRTURA OBJECT STORE / 2026</p>
+    <h1>GOODS<br>FOR REALITY.</h1>
+    <p class="lede">Objects derived from performances, systems and experiments. Physical objects, digital objects, one registry.</p>
+    <p class="statusline"><span class="dot"></span> PROTOTYPE COLLECTION / LIVE DEVELOPMENT</p>
+  </div>
+  <div class="hero-object" aria-label="Interactive TIMER / REWIND prototype">
+    <div class="timer-shell" id="heroTimer">
+      <div class="timer-top"><span>OBJ-002</span><span id="timerState">FORWARD</span></div>
+      <div class="timer-display" id="timerDisplay">10:00</div>
+      <div class="timer-bottom"><span>TIMER / REWIND</span><button id="timerToggle" type="button">REVERSE</button></div>
+    </div>
+  </div>
 </section>
-<section class="manifesto"><p>Physical objects. Digital objects. One registry.</p><p>Designed to be used, played with, verified and kept.</p></section>
-<section><div class="sectionhead"><span>CATALOG / 00—07</span><span>PROTOTYPE STORE</span></div><div id="grid" class="grid"></div></section>
-<section class="passport"><p class="eyebrow">OBJECT PASSPORT</p><h2>TMR-2026-0047</h2><div class="passportgrid"><span>OBJECT<br><b>TIMER / REWIND</b></span><span>EDITION<br><b>0047 / 0500</b></span><span>PHYSICAL TWIN<br><b>AVAILABLE</b></span><span>CHAIN<br><b>UNCLAIMED</b></span></div></section>
+
+<section class="manifesto">
+  <p>Designed to be used, played with, verified and kept.</p>
+  <p>NO GENERIC MERCH / NO SPECULATION</p>
+</section>
+
+<section id="objects" class="feature feature-timer">
+  <div class="feature-copy">
+    <p class="eyebrow">OBJ-002 / PHYGITAL</p>
+    <h2>TIMER / REWIND</h2>
+    <p>A physical timer with a reversible temporal state. In the digital twin, time can run forward, hold, rewind and leave residue.</p>
+    <div class="state-list"><span>FORWARD</span><span>HOLD</span><span>REWIND</span><span>RESIDUE</span></div>
+  </div>
+  <div class="feature-demo timer-stage">
+    <div class="residue" id="residue"></div>
+    <div class="mini-timer"><span>TIME</span><b id="miniTimer">00:42</b><small id="miniDirection">→</small></div>
+  </div>
+</section>
+
+<section class="feature feature-flow">
+  <div class="feature-demo flow-stage" id="flowStage" aria-label="DROP FLOW continuous flow demo">
+    <canvas id="flowCanvas"></canvas>
+    <div class="flow-label"><span>OBJ-003</span><b>DROP FLOW / ∞</b><small id="flowMode">LAMINAR</small></div>
+  </div>
+  <div class="feature-copy">
+    <p class="eyebrow">OBJ-003 / PHYGITAL</p>
+    <h2>DROP FLOW / ∞</h2>
+    <p>A continuous visual flow without a visible loop seam. The physical edition explores optical acrylic, light and fluid; the digital edition changes viscosity, density and turbulence.</p>
+    <div class="control-row"><button data-flow="LAMINAR">LAMINAR</button><button data-flow="FLOW">FLOW</button><button data-flow="TURBULENT">TURBULENT</button></div>
+  </div>
+</section>
+
+<section class="feature feature-sync">
+  <div class="feature-copy">
+    <p class="eyebrow">OBJ-001 / PROGRAMMABLE OBJECT</p>
+    <h2>SYNC OBJECT</h2>
+    <p>A small local audiovisual object. Microphone input is translated into restrained light states: LISTEN, LOCK, FOLLOW, HOLD and RELEASE.</p>
+    <button class="primary" id="micButton" type="button">ENABLE MICROPHONE</button>
+    <p class="microcopy" id="micStatus">Simulation is active until microphone permission is granted.</p>
+  </div>
+  <div class="feature-demo sync-stage">
+    <div class="sync-object" id="syncObject"><span>OBJ-001</span><div class="light-field" id="lightField"></div><small id="syncState">LISTEN</small></div>
+  </div>
+</section>
+
+<section id="digital" class="catalog-section">
+  <div class="sectionhead"><span>CATALOG / 00—07</span><span>PROTOTYPE STORE</span></div>
+  <div id="grid" class="grid"></div>
+</section>
+
+<section id="passport" class="passport">
+  <p class="eyebrow">OBJECT PASSPORT / INTERNAL REGISTRY</p>
+  <h2>TMR-2026-0047</h2>
+  <div class="passportgrid">
+    <span>OBJECT<br><b>TIMER / REWIND</b></span>
+    <span>EDITION<br><b>0047 / 0500</b></span>
+    <span>PHYSICAL TWIN<br><b>AVAILABLE</b></span>
+    <span>CHAIN<br><b>UNCLAIMED</b></span>
+  </div>
+  <p class="passport-note">The Object Registry is canonical. Blockchain verification is optional and testnet-first.</p>
+</section>
 </main>
-<footer><span>MERGE / VIRTURA</span><span>CONCEPT STORE — NOT YET FOR SALE</span></footer>
+<footer><span>MERGE / VIRTURA</span><span>CONCEPT STORE — OBJECTS IN DEVELOPMENT</span><span>2026</span></footer>
 <script src="app.js"></script>
-</body></html>
+</body>
+</html>
