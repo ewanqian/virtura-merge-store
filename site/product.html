@@ -1,51 +1,55 @@
 <!doctype html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#e8e4dd">
+<meta name="theme-color" content="#f1eee7">
 <title>MERGE / OBJECT</title>
-<meta name="description" content="VIRTURA MERGE object detail prototype.">
+<meta name="description" content="VIRTURA MERGE 制品详情。">
 <link rel="stylesheet" href="styles.css">
 <link rel="stylesheet" href="product.css">
 </head>
 <body>
 <header class="topbar">
   <a class="brand" href="index.html">VIRTURA <span>/ MERGE</span></a>
-  <nav><a href="index.html#objects">OBJECTS</a><a href="index.html#digital">DIGITAL</a><a href="index.html#passport">PASSPORT</a></nav>
+  <nav><a href="index.html#objects">制品 OBJECTS</a><a href="index.html#digital">数字 DIGITAL</a><a href="index.html#passport">护照 PASSPORT</a></nav>
 </header>
 <main class="product-page">
   <section class="product-hero">
-    <div class="product-stage"><div class="product-shape" id="productShape"><span id="productCode">OBJ-000</span><b id="productGlyph">MERGE</b><small id="productState">PROTOTYPE</small></div></div>
+    <div class="product-stage">
+      <div class="product-index"><span id="productIndex">COLLECTION 00</span><span>VIRTURA / MERGE</span></div>
+      <div class="product-shape" id="productShape"><span id="productCode">OBJ-000</span><b id="productGlyph">MERGE</b><small id="productState">PROTOTYPE</small></div>
+      <p class="product-stage-caption" id="stageCaption">OBJECT STUDY / PRE-PRODUCTION</p>
+    </div>
     <div class="product-info">
       <p class="eyebrow" id="productMeta">OBJECT / PROTOTYPE</p>
-      <h1 id="productName">LOADING OBJECT</h1>
+      <h1><span class="cn-serif" id="productNameCN">制品</span><small id="productName">LOADING OBJECT</small></h1>
       <p class="product-tagline" id="productTagline"></p>
       <div class="product-specs" id="productSpecs"></div>
       <div class="purchase-panel">
-        <div><span>CONCEPT PRICE</span><b id="productPrice">—</b></div>
+        <div><span>概念价格 / CONCEPT PRICE</span><b id="productPrice">—</b></div>
         <div class="product-actions">
-          <a class="digital-object-button" id="digitalObjectButton" href="#" hidden>OPEN DIGITAL OBJECT</a>
-          <button class="primary" id="reserveButton" type="button">RESERVE PROTOTYPE</button>
+          <a class="digital-object-button" id="digitalObjectButton" href="#" hidden>打开数字物件 / OPEN DIGITAL OBJECT</a>
+          <button class="primary" id="reserveButton" type="button">保存原型 / RESERVE</button>
         </div>
       </div>
-      <p class="microcopy">Prototype reservation only. No payment is collected.</p>
+      <p class="microcopy">当前为售前概念与原型展示，不收取付款。</p>
     </div>
   </section>
   <section class="object-passport-detail">
-    <p class="eyebrow">OBJECT PASSPORT / PREVIEW</p>
+    <p class="eyebrow">OBJECT PASSPORT / 制品护照预览</p>
     <div class="passport-number" id="passportNumber">—</div>
     <div class="passportgrid">
-      <span>OBJECT<br><b id="passportObject">—</b></span>
-      <span>EDITION<br><b>PRE-PRODUCTION</b></span>
-      <span>PHYSICAL TWIN<br><b id="passportTwin">—</b></span>
-      <span>CHAIN<br><b>UNCLAIMED</b></span>
+      <span>制品 OBJECT<br><b id="passportObject">—</b></span>
+      <span>编号 EDITION<br><b>PRE-PRODUCTION</b></span>
+      <span>实体对应 PHYSICAL TWIN<br><b id="passportTwin">—</b></span>
+      <span>链上状态 CHAIN<br><b>UNCLAIMED</b></span>
     </div>
-    <button class="passport-claim" id="claimButton" type="button">SIMULATE CLAIM</button>
-    <p class="microcopy" id="claimStatus">Object Registry is canonical. Chain claim is simulated in this prototype.</p>
+    <button class="passport-claim" id="claimButton" type="button">模拟领取 / SIMULATE CLAIM</button>
+    <p class="microcopy" id="claimStatus">Object Registry 是主记录；当前链上领取仅为界面模拟。</p>
   </section>
 </main>
-<footer><span>MERGE / VIRTURA</span><span>OBJECT DETAIL / PROTOTYPE</span><span>2026</span></footer>
+<footer><span>MERGE / VIRTURA</span><span>现实制品 / GOODS FOR REALITY</span><span>2026</span></footer>
 <script src="product.js"></script>
 </body>
 </html>
