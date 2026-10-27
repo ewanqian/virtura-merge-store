@@ -1,11 +1,11 @@
 <!doctype html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="theme-color" content="#0d0d0c">
-<title>TIMER / REWIND — VIRTURA MERGE</title>
-<meta name="description" content="Interactive 3D prototype of VIRTURA MERGE TIMER / REWIND.">
+<title>时间 / 倒流 — VIRTURA MERGE</title>
+<meta name="description" content="VIRTURA MERGE TIMER / REWIND 交互式 3D 数字物件。">
 <link rel="stylesheet" href="timer.css">
 <script type="importmap">
 {
@@ -17,23 +17,23 @@
 </script>
 </head>
 <body>
-<header class="topbar"><a href="index.html">VIRTURA / MERGE</a><span>OBJ-002 / DIGITAL OBJECT</span><a href="product.html?id=OBJ-002">DETAILS</a></header>
+<header class="topbar"><a href="index.html">VIRTURA / MERGE</a><span>OBJ-002 / DIGITAL OBJECT</span><a href="product.html?id=OBJ-002">详情 DETAILS</a></header>
 <main>
   <section class="viewer" id="viewer">
     <div id="canvasMount" class="canvas-mount"></div>
-    <div class="hud hud-left"><span>STATE</span><b id="stateLabel">FORWARD</b></div>
-    <div class="hud hud-right"><span>TIME</span><b id="timeLabel">10:00</b></div>
-    <div class="instructions">DRAG TO ROTATE · SCROLL TO ZOOM · FLIP UPSIDE DOWN TO REWIND</div>
+    <div class="hud hud-left"><span>状态 STATE</span><b id="stateLabel">FORWARD</b></div>
+    <div class="hud hud-right"><span>时间 TIME</span><b id="timeLabel">10:00</b></div>
+    <div class="instructions">拖动旋转 · 滚轮缩放 · 将物件翻转至倒置方向进入 REWIND</div>
   </section>
   <section class="control-panel">
-    <div><span class="eyebrow">TIMER / REWIND</span><h1>A physical interface for reversible time.</h1></div>
+    <div><span class="eyebrow">OBJ-002 / TIMER / REWIND</span><h1><span class="cn-title">时间可以被翻转。</span><small>A physical interface for reversible time.</small></h1></div>
     <div class="controls">
-      <button id="forwardBtn">FORWARD</button>
-      <button id="holdBtn">HOLD</button>
-      <button id="rewindBtn">REWIND</button>
-      <button id="resetBtn">RESET</button>
+      <button id="forwardBtn">正向 / FORWARD</button>
+      <button id="holdBtn">保持 / HOLD</button>
+      <button id="rewindBtn">倒流 / REWIND</button>
+      <button id="resetBtn">复位 / RESET</button>
     </div>
-    <p>Prototype behavior: orientation and explicit control both affect temporal direction. The final physical edition will map the same state model to IMU input.</p>
+    <p>当前原型中，物件朝向和显式控制都会改变时间方向。实体版本将把同一套状态模型映射到 IMU 姿态输入。</p>
   </section>
 </main>
 <script type="module" src="timer.js"></script>
