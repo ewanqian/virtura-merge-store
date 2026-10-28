@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#eeeae3">
+<title>项目简报 / PROJECT BRIEF — VIRTURA</title>
+<meta name="description" content="VIRTURA 产品化合作项目简报生成器。">
+<link rel="stylesheet" href="brief.css">
+</head>
+<body>
+<header><a href="productization.html">VIRTURA / PRODUCTIZATION</a><span>PROJECT BRIEF / 项目简报</span><a href="index.html">STORE ↗</a></header>
+<main>
+<section class="intro">
+<p>NEW PROJECT / INTAKE</p>
+<h1>先说项目，<br>不要先选周边。</h1>
+<div>填写下面的信息，生成一份可以直接用于第一次沟通的项目简报。这里只在浏览器本地整理文本，不上传内容。</div>
+</section>
+<form id="briefForm">
+<div class="field"><label>组织 / 项目名称<br><small>ORGANIZATION / PROJECT</small></label><input name="project" placeholder="例如：某展览 / 某品牌发布会"></div>
+<div class="field"><label>项目类型<br><small>PROJECT TYPE</small></label><select name="type"><option>博物馆 / 文化机构</option><option>展览 / 艺术项目</option><option>音乐节 / 演出</option><option>科技 / 汽车品牌</option><option>艺术家 / IP</option><option>其他</option></select></div>
+<div class="field"><label>计划上线时间<br><small>LAUNCH DATE</small></label><input name="date" placeholder="YYYY-MM / 或具体日期"></div>
+<div class="field"><label>核心内容 / IP<br><small>CONTENT / IP</small></label><textarea name="content" placeholder="希望从什么内容、作品、展览、声音、视觉系统或品牌语言出发？"></textarea></div>
+<div class="field"><label>目标人群<br><small>AUDIENCE</small></label><input name="audience" placeholder="观众 / VIP / 买票用户 / 店铺消费者... "></div>
+<div class="field"><label>用途<br><small>USE</small></label><select name="use"><option>零售商品</option><option>VIP / 礼赠</option><option>展览 / 互动体验</option><option>现场活动</option><option>混合用途</option></select></div>
+<div class="field"><label>预计数量<br><small>QUANTITY</small></label><input name="quantity" placeholder="例如 50 / 200 / 1000 / 未确定"></div>
+<div class="field"><label>目标单价 / 零售价<br><small>TARGET UNIT / RETAIL PRICE</small></label><input name="price" placeholder="例如 ¥99–199 / 未确定"></div>
+<div class="field"><label>创意 / 设计预算<br><small>CREATIVE BUDGET</small></label><input name="creativeBudget" placeholder="预算区间即可"></div>
+<div class="field"><label>生产预算<br><small>PRODUCTION BUDGET</small></label><input name="productionBudget" placeholder="可与创意预算分开"></div>
+<div class="field"><label>互动需求<br><small>INTERACTION</small></label><textarea name="interaction" placeholder="声音 / 灯光 / 按键 / 手机 / Web / XR / 无互动"></textarea></div>
+<div class="field"><label>包装 / 陈列需求<br><small>PACKAGING / DISPLAY</small></label><textarea name="packaging" placeholder="零售包装、限定版、展陈、快闪、邮寄等"></textarea></div>
+<div class="field"><label>生产 / 发货地区<br><small>REGION</small></label><input name="region" placeholder="中国大陆 / 海外 / 多地区"></div>
+<div class="field"><label>授权与审批限制<br><small>LICENSING / APPROVAL</small></label><textarea name="approval" placeholder="IP 授权、品牌审核、展览版权、材料限制等"></textarea></div>
+<div class="field wide"><label>最希望 VIRTURA 解决什么？<br><small>PRIMARY PROBLEM</small></label><textarea name="goal" placeholder="一句话说明最重要的目标或难点"></textarea></div>
+<div class="actions wide"><button type="submit">生成项目简报 / GENERATE BRIEF</button><button type="button" id="copyBtn" disabled>复制 / COPY</button></div>
+</form>
+<section class="output" id="outputSection" hidden><p>GENERATED BRIEF</p><pre id="briefOutput"></pre><small>请检查内容后，通过 VIRTURA 的常规联系渠道发送。制造、供应链与报价需在正式评估后确认。</small></section>
+</main>
+<footer><span>VIRTURA</span><span>CONCEPT → OBJECT → PRODUCTION</span><a href="productization.html">BACK →</a></footer>
+<script src="brief.js"></script>
+</body>
+</html>
