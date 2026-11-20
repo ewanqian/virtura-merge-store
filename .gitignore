@@ -1,0 +1,10 @@
+# Local-only material; existing committed history is not affected by .gitignore.
+.env
+.env.local
+.env.*.local
+/private-ops/
+/docs/COMMERCIAL_SCOPE_AND_PRICING_BOUNDARY.md
+/docs/COMMERCIAL_COLLAB_STRATEGY.md
+/docs/SKU_COMMERCIAL_SCORECARD.md
+/docs/MANAGER_BOARD.md
+/docs/SUPPLY_CHAIN.md
