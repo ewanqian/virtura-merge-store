@@ -27,10 +27,14 @@ MERGE is not a generic merch shop. It turns visual systems, performances and exp
 6. No speculative resale, floor-price framing, investment claims or RWA tokenization in the initial system.
 7. Visual language: precise, quiet, minimal, materially credible.
 
+## Publication boundary
+
+The public repository holds storefront code, product concepts, demos and approved service information. Internal pricing rules, SKU decisions, current management boards and non-public production records are kept in the private VIRTURA-Team workspace. See [publishing boundary](docs/PUBLISHING_BOUNDARY.md). A public Git history is not a private archive.
+
 ## Repository map
 
 - `site/` — working store prototype
-- `docs/` — product, architecture, roadmap, compliance, supply chain
+- `docs/` — public product, architecture, compliance and service materials; internal pricing, management and procurement records live in a private workspace
 - `agents/` — role briefs and handoff rules
 - `contracts/` — Conflux testnet contract placeholders
 - `backend/` — Object Registry / commerce backend design
